@@ -1,0 +1,457 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	color: #1c1c1c;
+}
+
+	div, p, input, header, a, form {
+	box-sizing: border-box;
+	border-bottom: 1px solid transparent;
+}
+
+a{
+	color: #1c1c1c;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+a:hover{
+	color: #435993;
+	text-decoration: none;
+}
+
+.header{
+	padding-bottom: 34px;
+}
+
+p{
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
+
+ul, li, a  {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 768px;
+	margin: 0 auto;
+}
+
+.menu-bar{
+	padding-top: 37px;
+}
+
+.menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.offer h1{
+	margin-top: 129px;
+	text-align: center;
+	font-size: 70px;
+	font-weight: 100;
+}
+
+.offer-icon{
+	display: block;
+	margin: 0 auto;
+	margin-top: 75px;
+	margin-bottom: 28px;
+}
+
+h2{
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 52px;
+}
+
+.form-bio input{
+	color: #1c1c1c;
+	font-size: 20px;
+	font-weight: 400;
+	width: 520px;
+	text-align: center;
+	padding: 12px 0 12px 0;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	background-color: rgba(217, 217, 217, 0);
+}
+
+input::placeholder{
+	color: #c8c8c8;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.form-bio select{
+	color: #c8c8c8;
+	font-size: 24px;
+	font-weight: 400;
+	width: 320px;
+	padding: 12px 0 12px 0;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	background-color: rgba(217, 217, 217, 0);
+	text-align: center;
+	text-align-last: center; 
+}
+
+select:focus{
+	color: #435993;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+
+.skill-menu{
+  list-style: none;
+  column-count: 3;
+
+
+}	
+
+.skill-menu li{
+    font-size: 16px;
+	font-weight: 300;
+	color: #000;
+}
+
+input[type=checkbox]{
+	transform: scale(1.5);
+}
+
+
+
+.skill-menu input{
+	margin-right: 12px;
+}
+
+
+.javaskript-skill img{
+	margin: 0 auto;
+	margin-top: 135px;
+	margin-bottom: 30px;
+	display: block;
+}
+
+.slider-menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.slider-bar li{
+	font-size: 13px;
+	font-weight: 300;
+	color: #2e211c;
+	margin-bottom: 5px;
+}
+
+
+.slidecontainer {
+  width: 100%; /* Ширина внешнего контейнера */
+}
+
+/* Сам ползунок */
+.slider {
+ 
+  width: 100%; /* Полная ширина */
+  /* Фон */
+  outline: none; /* Удалить контур */
+  opacity: 0.7; /* Установите прозрачность (для эффектов наведения мыши при наведении курсора) */
+  -webkit-transition: .2s; /* 0.2 секундный переход при наведении курсора */
+  transition: opacity .2s;
+}
+
+/* Эффекты наведения курсора мыши */
+.slider:hover {
+  opacity: 1; /* Полностью отображается при наведении курсора мыши */
+}
+
+/*Ползунок обработчик (использовать -webkit- (Chrome, Opera, Safari, Edge) и -moz- (Firefox) чтобы переопределить внешний вид по умолчанию ) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Переопределить внешний вид по умолчанию */
+  appearance: none;
+  width: 20px; /* Установите определенную ширину обработчика ползунка */
+  height: 15px; /* Высота обработчика ползунка */
+  background: #fff; /* Фон маркера */
+  cursor: pointer; /* Курсор при наведении */
+}
+
+.slider::-moz-range-thumb {
+  width: 12px; /* Установите определенную ширину обработчика ползунка */
+  height: 30px; /* Высота обработчика подзунка */
+  background: #fff; /* фон маркера */
+  cursor: pointer; /* Курсор при наведении */
+}
+
+#bio{
+	padding-bottom: 75px;
+}
+
+.bio img{
+	display: block;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+.bio h2{
+	margin-bottom: 25px;
+}
+
+.comment{
+	text-align: center;
+}
+
+p.comment{
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 43px;
+}
+
+.bio textarea{
+	font-size: 20px;
+	font-weight: 400;
+	color: #1c1c1c;
+	width: 520px;
+	height: 180px;
+	display: block;
+	margin: 0 auto;
+}
+
+
+textarea::placeholder{
+	font-size: 20px;
+	font-weight: 400;
+	color: #c8c8c8;
+}
+
+.btn{
+	display: block;
+	margin: 0 auto;
+	margin-top: 75px;
+	border-radius: 10px;
+ 	background-color: rgb(67, 89, 147);
+   	width: 116px;
+   	color: white;
+   	text-align: center;
+   	padding: 17px 0 17px 0;
+}
+
+.btn:hover{
+	color: #fff;
+	background-color: #2b3c6b;
+}
+
+
+.menu-btn {
+	display: none;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+}
+
+.menu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #000;
+	transition: all 0.8s;
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+
+@media screen and (max-width: 992px) {
+	.container{
+		width: 720px;
+	}
+
+	.skill-menu{
+		display: grid;
+		justify-content: center;
+	}
+
+	.javaskript-skill img{
+		margin-top: 80px;
+	}
+
+	.slider-menu li{
+		font-size: 11px;
+	}
+
+	.bio img{
+		margin-top: 75px;
+	}
+
+	textarea::placeholder{
+		font-size: 19px;
+	}
+}	
+
+@media screen and (max-width: 767px){
+	.container{
+		width: 540px;
+	}
+
+	ul.menu{
+		display: none;
+
+	}
+
+	.menu-btn{
+	margin-right: auto;
+	display: block;
+	margin-top: 30px;
+	}
+
+	.menu a{
+		font-size: 16px;
+		font-weight: 400;
+		color: #fff;
+		padding: 20px 20px 20px 20px;
+		margin: 0;
+	}
+
+	.menu a:hover{
+		cursor: pointer;
+	}
+
+	.menu{
+		background: black;
+		opacity: 0.6;
+		width: 40%;
+	}
+
+}
+
+
+@media screen and (max-width: 576px){
+	.container{
+		width: 100%
+	}
+
+	.menu-btn{
+		margin: 0 auto;
+	}	
+
+	.menu{
+		width: 50%;
+	}
+
+	ul.menu{
+		margin: 0 auto;
+	}
+
+	.menu a{
+		font-size: 14px;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.form-bio input	{
+		width: 100%;
+	}
+
+	.form-bio select{
+		width: 75%;
+	}
+
+	.slider-menu li{
+		font-size: 6px;
+		font-weight: bold;
+	}
+
+	.bio textarea{
+		font-size: 12px;
+		width: 100%
+	}
+
+	.btn{
+		width: 100%;
+		margin-top: 25px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.container{
+		width: 100%
+	}
+
+	.menu-btn{
+		margin: 0 auto;
+	}	
+
+	.menu{
+		width: 50%;
+	}
+
+	ul.menu{
+		margin: 0 auto;
+	}
+
+	.menu a{
+		font-size: 14px;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.form-bio input	{
+		width: 100%;
+	}
+
+	.form-bio select{
+		width: 75%;
+	}
+
+	.slider-menu li{
+		font-size: 6px;
+		font-weight: bold;
+	}
+
+	.bio textarea{
+		font-size: 12px;
+		width: 100%
+	}
+
+	.btn{
+		width: 100%;
+		margin-top: 25px;
+	}
+}
+
